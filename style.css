@@ -311,11 +311,6 @@ a button:hover {
         background-color: blue;
     }
 
-    nav:target {
-        clip-path: circle(150% at top right);
-        position: fixed;
-    }
-
     .emprendimiento {
         display: flex;
         flex-direction: column;
