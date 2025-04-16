@@ -88,10 +88,7 @@ article img:hover {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 45vh;
     width: 100%;
-
 }
 
 .navbar-expand-lg .navbar-collapse {
@@ -164,6 +161,12 @@ li a {
     padding: 10px;
 }
 
+.progress,
+.progress-stacked {
+    height: 30px;
+    margin: 10px 0;
+}
+
 /* NUESTRO EQUIPO */
 .empleados img {
     border-radius: 50%;
@@ -175,6 +178,11 @@ li a {
 .empleados article {
     display: flex;
     flex-direction: row-reverse;
+}
+
+#sofia {
+    display: flex;
+    flex-direction: row;
 }
 
 /* IMAGENTES DE SERVICIOS */
@@ -243,14 +251,12 @@ input[type="submit"]:hover {
     grid-template-columns: 10%;
     align-items: baseline;
     justify-content: space-around;
-
 }
 
 .redes img {
     width: 50%;
     height: 90%;
     margin: 5px 5px;
-
 }
 
 .pie p {
@@ -274,6 +280,14 @@ a button:hover {
     color: white;
     border: solid var(--color3) 2px;
     cursor: pointer;
+}
+
+.botones {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    padding: 30px;
+    margin: 10px 10px;
 }
 
 /* BOTON DE WHATSAPP */
@@ -318,7 +332,6 @@ a button:hover {
         flex-direction: column;
         align-items: center;
     }
-
 }
 
 @media screen and (max-width: 480px) {
@@ -341,13 +354,10 @@ a button:hover {
     .empleados article {
         display: block;
         text-align: center;
-
     }
 
     .servicios article {
         display: block;
         text-align: center;
-
     }
-
 }
