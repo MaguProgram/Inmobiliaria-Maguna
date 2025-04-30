@@ -69,7 +69,7 @@ body {
 }
 
 p {
-  font-size: 20px;
+  font-size: 24px;
   margin: 20px 0;
   padding: 10px;
 }
@@ -92,6 +92,7 @@ h3 {
   text-decoration: underline;
   font-size: 30px;
   margin: 20px 0;
+  text-align: center;
 }
 
 h2 {
@@ -115,15 +116,40 @@ article img:hover {
 }
 @media screen and (max-width: 768px) {
   article p {
-    font-size: 12px;
+    font-size: 14px;
   }
   p {
-    font-size: 15px;
+    font-size: 18px;
   }
-  h1,
-  h2,
+  section h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 28px;
+  }
   h3 {
-    font-size: 20px;
+    font-size: 22px;
+  }
+  .proyectos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .servicios article {
+    display: block;
+    text-align: center;
+  }
+  .emprendimiento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .eslogan h4 {
+    font-size: 28px;
   }
 }
 /* ------- BOTON DE CONSULTA -------- */
@@ -154,8 +180,53 @@ a button:hover {
   text-align: center;
   font-size: 50px;
   z-index: 100;
+  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+  animation: heartbeat 1.5s ease-in-out infinite both;
 }
 
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+@media screen and (max-width: 768px) {
+  .float-wa {
+    font-size: 30px;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+  }
+}
 .proyectos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -223,6 +294,15 @@ a button:hover {
 .progress-stacked {
   height: 30px;
   margin: 10px 0;
+}
+
+.progress-bar {
+  background-color: var(--color2);
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  font-size: 17px;
+  border-color: black;
 }
 
 @media screen and (max-width: 1024px) {
@@ -309,9 +389,10 @@ a button:hover {
   mask-image: linear-gradient(black 80%, transparent);
   width: 80%;
   height: 50vh;
+  object-fit: cover;
+  padding: 3px;
 }
 .servicios article p {
-  font-size: 20px;
   margin: 5% 0;
   padding: 2%;
   align-items: center;
@@ -405,6 +486,12 @@ input[type=submit]:hover {
   input[type=submit] {
     font-size: 15px;
   }
+  input {
+    width: 90%;
+  }
+  #mensaje {
+    width: 90%;
+  }
 }
 @media screen and (max-width: 480px) {
   a button {
@@ -427,7 +514,7 @@ nav .encabezado img {
 
 .eslogan h4 {
   text-align: center;
-  font-size: 50px;
+  font-size: 40px;
   margin: 3%;
   padding: 30px;
   animation: bounce 5s infinite;
@@ -484,9 +571,11 @@ li a {
 
 .pie p {
   padding: 0.2%;
+  margin-top: 1%;
   background-color: var(--color6);
   color: white;
   text-align: center;
+  min-height: 80%;
 }
 
 /*# sourceMappingURL=style.css.map */

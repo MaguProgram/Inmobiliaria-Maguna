@@ -65,6 +65,14 @@ input[type="submit"] {
     input[type="submit"] {
         font-size: 15px;
     }
+
+    input {
+        width: 90%;
+    }
+
+    #mensaje {
+        width: 90%;
+    }
 }
 
 @media screen and (max-width: 480px) {

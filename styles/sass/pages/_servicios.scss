@@ -1,6 +1,5 @@
 @use "../base/_mediaquery.scss";
 
-
 .servicios article {
     display: flex;
 
@@ -8,10 +7,11 @@
         mask-image: linear-gradient(black 80%, transparent);
         width: 80%;
         height: 50vh;
+        object-fit: cover;
+        padding: 3px;
     }
 
     p {
-        font-size: 20px;
         margin: 5% 0;
         padding: 2%;
         align-items: center;
@@ -30,12 +30,14 @@
     .servicios article {
         display: block;
         text-align: center;
+
     }
 
     nav ul {
         flex-direction: column;
         align-items: center;
     }
+
 }
 
 @media screen and (max-width: 480px) {
