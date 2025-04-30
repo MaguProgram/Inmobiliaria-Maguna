@@ -1,0 +1,19 @@
+.redes {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: baseline;
+    background-color: white;
+
+    img {
+        width: 30%;
+        height: 70%;
+    }
+}
+
+.pie p {
+    padding: 0.2%;
+    background-color: var(--color6);
+    color: white;
+    text-align: center;
+}

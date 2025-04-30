@@ -1,0 +1,81 @@
+@use "../base/_mediaquery.scss";
+
+
+.mapa {
+    width: 90%;
+    height: 70vh;
+    padding: 1%;
+    margin: 5% 5%;
+    border-radius: 1%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    padding: 10px;
+    align-items: center;
+}
+
+label {
+    display: block;
+    margin: 5px 5px;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+input {
+    display: block;
+    width: 50%;
+    height: 5vh;
+}
+
+#mensaje {
+    width: 50%;
+    height: 100px;
+}
+
+input[type="submit"] {
+    font-size: 22px;
+    background-color: var(--fondoBotones);
+    color: white;
+    border: solid var(--fondoBotones) 2px;
+    margin: 10px;
+
+    &:hover {
+        background-color: var(--fondoBotones);
+        color: white;
+        border: solid var(--color3) 2px;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.75)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input[type="submit"] {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    a button {
+        font-size: 20px
+    }
+
+    nav {
+        display: flex;
+        text-align: center;
+        align-items: center;
+    }
+
+}

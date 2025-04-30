@@ -1,0 +1,20 @@
+// BASE
+@use "./sass/base/_reset.scss";
+@use "./sass/base/_vars.scss";
+@use "./sass/base/_typography.scss";
+
+// PAGES
+@use "./sass/pages/_index.scss";
+@use "./sass/pages/_emprendimientos.scss";
+@use "./sass/pages/_nuestro_equipo.scss";
+@use "./sass/pages/_servicios.scss";
+@use "./sass/pages/_contacto.scss";
+
+// COMPONENTS
+@use "./sass/components/_buttons.scss";
+
+// LAYOUT
+@use "./sass/layout/_header.scss";
+@use "./sass/layout/_footer.scss";
+
+@use "./sass/base/_mediaquery.scss";
