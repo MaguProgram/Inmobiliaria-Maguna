@@ -45,6 +45,22 @@
     flex-direction: column;
     align-items: center;
   }
+  input[type=submit] {
+    font-size: 15px;
+  }
+  input {
+    width: 90%;
+  }
+  #mensaje {
+    width: 90%;
+  }
+  .float-wa {
+    font-size: 30px;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+  }
 }
 @media screen and (max-width: 480px) {
   a button {
@@ -524,7 +540,7 @@ nav .encabezado img {
 
 /* ----------- IMAGEN BARRA NAVEGACION ------------ */
 .bg-body-tertiary {
-  background-image: url(../../../img/atardecer_pinos.jpg);
+  background-image: url(../../../img/atardecer_pinos.avif);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
