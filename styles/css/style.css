@@ -61,6 +61,24 @@
     bottom: 40px;
     right: 40px;
   }
+  article p {
+    font-size: 14px;
+  }
+  p {
+    font-size: 18px;
+  }
+  section h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 22px;
+  }
+  .eslogan h4 {
+    font-size: 28px;
+  }
 }
 @media screen and (max-width: 480px) {
   a button {
@@ -75,6 +93,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .eslogan h4 {
+    font-size: 20px;
   }
 }
 body {
@@ -99,6 +120,7 @@ article p {
 }
 
 section h1 {
+  font-weight: 900;
   text-align: center;
   font-size: 50px;
   margin: 20px 0;
@@ -112,6 +134,7 @@ h3 {
 }
 
 h2 {
+  font-weight: 600;
   text-align: center;
   font-size: 40px;
   margin: 20px 0;
@@ -180,6 +203,12 @@ a button:hover {
   background-color: var(--fondoBotones);
   color: white;
   border: solid var(--fondoBotones) 2px;
+  cursor: pointer;
+}
+a button:hover {
+  background-color: var(--fondoBotones);
+  color: var(--color3);
+  border: solid var(--fondoBotones) 4px;
   cursor: pointer;
 }
 
@@ -260,6 +289,10 @@ a button:hover {
   width: 80%;
   height: 30%;
   margin: 5px 0;
+}
+
+ul li a:hover {
+  color: var(--color3);
 }
 
 @media screen and (max-width: 1024px) {
@@ -416,6 +449,12 @@ a button:hover {
   justify-content: center;
 }
 
+.servicios h2 {
+  color: var(--fondoBotones);
+  text-decoration: underline;
+  font-weight: 600;
+}
+
 @media screen and (max-width: 1024px) {
   .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.75)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
@@ -429,6 +468,9 @@ a button:hover {
   nav ul {
     flex-direction: column;
     align-items: center;
+  }
+  .eslogan h4 {
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -530,6 +572,7 @@ nav .encabezado img {
 
 .eslogan h4 {
   text-align: center;
+  font-weight: 400;
   font-size: 40px;
   margin: 3%;
   padding: 30px;
@@ -573,15 +616,25 @@ li a {
   margin: 0 10px;
 }
 
+@media screen and (max-width: 768px) {
+  .eslogan h4 {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 448px) {
+  .eslogan h4 {
+    font-size: 20px;
+  }
+}
 .redes {
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
   align-items: baseline;
-  background-color: white;
+  background-color: var(--color2);
 }
 .redes img {
-  width: 30%;
+  width: 12%;
   height: 70%;
 }
 

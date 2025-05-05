@@ -3,10 +3,11 @@
     flex-direction: row-reverse;
     justify-content: center;
     align-items: baseline;
-    background-color: white;
+    background-color: var(--color2);
 
     img {
-        width: 30%;
+
+        width: 12%;
         height: 70%;
     }
 }

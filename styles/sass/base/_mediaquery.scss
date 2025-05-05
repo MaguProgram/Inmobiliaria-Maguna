@@ -56,6 +56,30 @@
         bottom: 40px;
         right: 40px;
     }
+
+    article p {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    section h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    .eslogan h4 {
+        font-size: 28px;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -75,4 +99,7 @@
         align-items: center;
     }
 
+    .eslogan h4 {
+        font-size: 20px;
+    }
 }

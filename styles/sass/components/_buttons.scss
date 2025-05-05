@@ -1,4 +1,5 @@
 @use "../base/_vars.scss";
+@use "../base/mediaquery.scss";
 
 /* ------- BOTON DE CONSULTA -------- */
 a button {
@@ -13,6 +14,13 @@ a button {
         background-color: var(--fondoBotones);
         color: white;
         border: solid var(--fondoBotones) 2px;
+        cursor: pointer;
+    }
+
+    &:hover {
+        background-color: var(--fondoBotones);
+        color: var(--color3);
+        border: solid var(--fondoBotones) 4px;
         cursor: pointer;
     }
 }
