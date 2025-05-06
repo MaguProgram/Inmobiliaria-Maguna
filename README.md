@@ -1,1 +1,1 @@
-"Pagina en proceso" para el Proyecto final del curso Coderhouse de Desarrollo web. Estoy creando una pagina web para una inmobiliaria aplicando los conceptos vistos hasta el momento (HTML, CSS, BOOTSTRAP, ANIMACIONES y otros).
+"Pagina en proceso" para el Proyecto final del curso Coderhouse de Desarrollo web. Estoy creando una pagina web para una inmobiliaria aplicando las herramientas vistas hasta el momento (HTML, CSS, BOOTSTRAP, ANIMACIONES y otros).
