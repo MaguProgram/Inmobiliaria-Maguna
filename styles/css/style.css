@@ -106,7 +106,7 @@ body {
 }
 
 p {
-  font-size: 24px;
+  font-size: 22px;
   margin: 20px 0;
   padding: 10px;
 }
@@ -213,7 +213,7 @@ nav .encabezado img {
 
 /* ----------- IMAGEN BARRA NAVEGACION ------------ */
 .bg-body-tertiary {
-  background-image: url(../../img/atardecer_pinos.jpg);
+  background-image: url(../../img/atardecer_pinos.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
