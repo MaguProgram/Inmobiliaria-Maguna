@@ -1,14 +1,10 @@
 .redes {
     display: flex;
-    flex-direction: row-reverse;
     justify-content: center;
-    align-items: baseline;
     background-color: var(--color2);
 
     img {
-
-        width: 12%;
-        height: 70%;
+        width: 50px;
     }
 }
 
@@ -19,4 +15,11 @@
     color: white;
     text-align: center;
     min-height: 80%;
+}
+
+@media screen and (max-width: 768px) {
+    .redes img {
+        width: 30px;
+    }
+
 }

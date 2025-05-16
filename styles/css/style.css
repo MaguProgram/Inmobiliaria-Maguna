@@ -328,6 +328,15 @@ a button:hover {
     animation-timing-function: ease-out;
   }
 }
+@media screen and (max-width: 1024px) {
+  .float-wa {
+    font-size: 40px;
+    width: 70px;
+    height: 70px;
+    bottom: 50px;
+    right: 50px;
+  }
+}
 @media screen and (max-width: 768px) {
   .float-wa {
     font-size: 30px;
@@ -394,7 +403,7 @@ ul li a:hover {
   padding: 1vh;
 }
 .emprendimiento article p {
-  font-size: 20px;
+  font-size: 17px;
   margin: 10px 0;
   padding: 10px;
   align-items: flex-start;
@@ -422,6 +431,9 @@ ul li a:hover {
 @media screen and (max-width: 1024px) {
   .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.75)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+  h3 {
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -525,17 +537,23 @@ ul li a:hover {
     background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.75)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 920px) {
   .servicios article {
     display: block;
     text-align: center;
   }
+}
+@media screen and (max-width: 768px) {
   nav ul {
     flex-direction: column;
     align-items: center;
   }
   .eslogan h4 {
     font-size: 20px;
+  }
+  nav .encabezado img {
+    width: 100px;
+    height: 100px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -548,37 +566,40 @@ ul li a:hover {
     align-items: center;
   }
 }
-.mapa {
-  width: 90%;
-  height: 70vh;
-  padding: 1%;
-  margin: 5% 5%;
-  border-radius: 1%;
+.contacto {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.contacto p {
+  font-size: 25px;
+  margin-top: 20px;
+  align-content: center;
+  padding: 5%;
+}
+.contacto .mapa {
+  width: 200%;
+  margin-bottom: 30px;
 }
 
 form {
-  display: flex;
-  flex-direction: column;
   margin: 10px 0;
   padding: 10px;
   align-items: center;
 }
-
-label {
+form label {
   display: block;
   margin: 5px 5px;
   font-size: 25px;
   text-decoration: underline;
 }
-
-input {
+form input {
   display: block;
-  width: 50%;
+  width: 90%;
   height: 5vh;
 }
-
-#mensaje {
-  width: 50%;
+form #mensaje {
+  display: flex;
+  width: 90%;
   height: 100px;
 }
 
@@ -587,7 +608,7 @@ input[type=submit] {
   background-color: var(--fondoBotones);
   color: white;
   border: solid var(--fondoBotones) 2px;
-  margin: 10px;
+  margin: 10px 0;
 }
 input[type=submit]:hover {
   background-color: var(--fondoBotones);
@@ -615,6 +636,15 @@ input[type=submit]:hover {
   #mensaje {
     width: 90%;
   }
+  .contacto {
+    display: block;
+    text-align: center;
+  }
+  .contacto .mapa {
+    width: 90%;
+    height: 20em;
+    margin-bottom: 10px;
+  }
 }
 @media screen and (max-width: 480px) {
   a button {
@@ -628,14 +658,11 @@ input[type=submit]:hover {
 }
 .redes {
   display: flex;
-  flex-direction: row-reverse;
   justify-content: center;
-  align-items: baseline;
   background-color: var(--color2);
 }
 .redes img {
-  width: 12%;
-  height: 70%;
+  width: 50px;
 }
 
 .pie p {
@@ -645,6 +672,12 @@ input[type=submit]:hover {
   color: white;
   text-align: center;
   min-height: 80%;
+}
+
+@media screen and (max-width: 768px) {
+  .redes img {
+    width: 30px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

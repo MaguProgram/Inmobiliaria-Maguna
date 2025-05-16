@@ -33,20 +33,47 @@
     }
 }
 
-@media screen and (max-width: 768px) {
-
+@media screen and (max-width: 920px) {
     .servicios article {
         display: block;
         text-align: center;
     }
+}
 
+
+@media screen and (max-width: 768px) {
     nav ul {
         flex-direction: column;
         align-items: center;
     }
 
+    // ADAPTAR MENU HAMBURGUESA CUANDO SE ACHICA LA PANTALLA A MOBILE
+
+    // .navbar-expand-lg .navbar-collapse {
+    //     flex-direction: column;
+    //     align-items: center;
+    //     width: 30%;
+    //     height: 1%;
+    // }
+
+    // .navbar-toggler {
+    //     border: white solid 3px;
+    //     width: 20%;
+    //     height: 20%;
+    // }
+
+    // span.navbar-toggler-icon {
+    //     align-items: center;
+    //     width: 25px;
+    // }
+
     .eslogan h4 {
         font-size: 20px;
+    }
+
+    nav .encabezado img {
+        width: 100px;
+        height: 100px;
     }
 }
 
