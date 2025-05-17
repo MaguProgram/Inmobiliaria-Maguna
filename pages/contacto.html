@@ -68,27 +68,34 @@
     </header>
 
     <main class="container">
-        <h2>Contáctanos para mas información</h2>
-        <!-- <img class="buzon" src="../img/mail-svgrepo-com.svg" alt="imagen sobre mail"> -->
+
+        <h2>Contáctanos para mas información <img class="buzon" src="../img/imagen-sobre.svg" alt="imagen sobre mail">
+        </h2>
 
         <div class="contacto">
             <form action="">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required placeholder="Ingrese su nombre">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required placeholder="Ingrese su email">
-                <label for="telefono">Telefono:</label>
-                <input type="tel" id="telefono" name="telefono" required placeholder="Ingrese su telefono">
-                <label for="mensaje">Mensaje:</label>
-                <textarea name="mensaje" id="mensaje" cols="30" rows="10" required
-                    placeholder="Escriba una breve consulta y nos pondremos en contacto"></textarea>
+                <label for="nombre" class="form-label">Nombre y Apellido</label>
+                <input type="text" class="form-control" name="nombre" id="formGroupExampleInput2" required
+                    placeholder="Ingrese su nombre y apellido">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" name="email" id="formGroupExampleInput2" requiered
+                    placeholder="Ingrese un email">
+                <label for="telefono" class="form-label">Teléfono</label>
+                <input type="tel" class="form-control" name="telefono" id="formGroupExampleInput2" required
+                    placeholder="Ingrese su teléfono">
+                <label for="floatingTextarea">Mensaje</label>
+                <textarea class="form-control" cols="30" rows="10" required placeholder="Escriba una breve consulta"
+                    id="floatingTextarea"></textarea>
                 <input type="submit" value="Enviar">
             </form>
+
             <p>
                 ¿Listo para dar el siguiente paso en tus inversiones o encontrar la propiedad ideal? Contáctanos hoy
                 mismo para recibir asesoramiento personalizado y descubrir oportunidades exclusivas en el mercado
                 inmobiliario. ¡Tu futuro comienza con una conversación!
+
             </p>
+
             <iframe class="mapa"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50916.70928064917!2d-56.90108602365555!3d-37.09811067356288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959c9ce568f79a97%3A0xb3445704438c8419!2sPinamar%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1742780441400!5m2!1ses!2sar"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
@@ -100,7 +107,10 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"
         async></script>
 
+    <hr>
+
     <div class="redes">
+        <p>Seguinos en nuestras redes</p>
         <a href="https://www.linkedin.com/in/pablomaguna/" target="_blank">
             <img src="../img/linkedin-svgrepo-com.svg" alt="Enlace a Linkedin">
         </a>
