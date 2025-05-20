@@ -1,3 +1,5 @@
+@use "../base/_vars.scss";
+
 .redes {
     display: flex;
     justify-content: center;
@@ -21,8 +23,8 @@
     min-height: 80%;
 }
 
-@media screen and (max-width: 768px) {
-    .redes img {
-        width: 30px;
-    }
-}
+// @media screen and (max-width: 768px) {
+//     .redes img {
+//         width: 30px;
+//     }
+// }

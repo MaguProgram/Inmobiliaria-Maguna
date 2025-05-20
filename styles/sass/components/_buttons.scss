@@ -1,5 +1,4 @@
 @use "../base/_vars.scss";
-@use "../base/mediaquery.scss";
 
 /* ------- BOTON DE CONSULTA -------- */
 a button {
@@ -81,22 +80,22 @@ a button {
     }
 }
 
-@media screen and (max-width: 1024px) {
-    .float-wa {
-        font-size: 40px;
-        width: 70px;
-        height: 70px;
-        bottom: 50px;
-        right: 50px;
-    }
-}
+// @media screen and (max-width: 1024px) {
+//     .float-wa {
+//         font-size: 40px;
+//         width: 70px;
+//         height: 70px;
+//         bottom: 50px;
+//         right: 50px;
+//     }
+// }
 
-@media screen and (max-width: 768px) {
-    .float-wa {
-        font-size: 30px;
-        width: 60px;
-        height: 60px;
-        bottom: 40px;
-        right: 40px;
-    }
-}
+// @media screen and (max-width: 768px) {
+//     .float-wa {
+//         font-size: 30px;
+//         width: 60px;
+//         height: 60px;
+//         bottom: 40px;
+//         right: 40px;
+//     }
+// }

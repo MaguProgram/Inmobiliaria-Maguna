@@ -1,7 +1,7 @@
 @use "../layout/_header.scss";
 @use "../components/_buttons.scss";
-@use "../base/_mediaquery.scss";
 @use "../base/_typography.scss";
+@use "../vendors/_mediaquery.scss";
 
 .proyectos {
     display: grid;
@@ -33,33 +33,33 @@ ul li a:hover {
     color: var(--color3);
 }
 
-@media screen and (max-width: 1024px) {
-    .navbar-toggler-icon {
-        background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.75)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-    }
-}
+// @media screen and (max-width: 1024px) {
+//     .navbar-toggler-icon {
+//         background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.75)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+//     }
+// }
 
-@media screen and (max-width: 768px) {
-    .proyectos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+// @media screen and (max-width: 768px) {
+//     .proyectos {
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//     }
 
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-}
+//     nav ul {
+//         flex-direction: column;
+//         align-items: center;
+//     }
+// }
 
-@media screen and (max-width: 480px) {
-    a button {
-        font-size: 20px
-    }
+// @media screen and (max-width: 480px) {
+//     a button {
+//         font-size: 20px
+//     }
 
-    nav {
-        display: flex;
-        text-align: center;
-        align-items: center;
-    }
-}
+//     nav {
+//         display: flex;
+//         text-align: center;
+//         align-items: center;
+//     }
+// }
