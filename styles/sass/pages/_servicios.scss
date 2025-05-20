@@ -1,4 +1,4 @@
-@use "../base/_mediaquery.scss";
+@use "../vendors/_mediaquery.scss";
 @use "../base/_vars.scss";
 
 .servicios article {
@@ -10,6 +10,7 @@
         height: 50vh;
         object-fit: cover;
         padding: 3px;
+        border-radius: 30px;
     }
 
     p {
