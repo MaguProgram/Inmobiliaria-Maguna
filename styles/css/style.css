@@ -17,43 +17,88 @@
   .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.75)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
   }
+
+  .float-wa {
+    font-size: 40px;
+    width: 70px;
+    height: 70px;
+    bottom: 50px;
+    right: 50px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
 }
+
+@media screen and (max-width: 920px) {
+  .servicios article {
+    display: block;
+    text-align: center;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .proyectos {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   .emprendimiento {
     display: grid;
     grid-template-columns: auto;
     align-items: center;
   }
-  .servicios article {
-    display: block;
-    text-align: center;
+
+  .emprendimiento article p {
+    font-size: 14px;
+    padding: 10px 0px;
   }
+
   .empleados article {
     display: block;
     text-align: center;
   }
+
   #sofia {
     flex-direction: column;
     align-items: center;
   }
+
   nav ul {
     flex-direction: column;
     align-items: center;
   }
+
   input[type=submit] {
     font-size: 15px;
   }
+
   input {
     width: 90%;
   }
+
   #mensaje {
     width: 90%;
   }
+
+  .contacto {
+    display: block;
+    text-align: center;
+  }
+
+  .contacto .mapa {
+    width: 90%;
+    height: 20em;
+    margin-bottom: 10px;
+  }
+
+  .contacto p {
+    font-size: 14px;
+    padding: 12px 0;
+  }
+
   .float-wa {
     font-size: 30px;
     width: 60px;
@@ -61,43 +106,72 @@
     bottom: 40px;
     right: 40px;
   }
+
   article p {
     font-size: 14px;
+    padding: 10px 0px;
   }
+
   p {
-    font-size: 18px;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px 0px;
   }
+
   section h1 {
     font-size: 30px;
   }
+
   h2 {
-    font-size: 28px;
+    font-size: 22px;
   }
+
   h3 {
     font-size: 22px;
   }
+
   .eslogan h4 {
     font-size: 28px;
   }
+
+  nav .encabezado img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .redes img {
+    width: 30px;
+  }
 }
+
 @media screen and (max-width: 480px) {
   a button {
     font-size: 20px;
   }
+
   nav {
     display: flex;
     text-align: center;
     align-items: center;
   }
+
   .emprendimiento {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   .eslogan h4 {
     font-size: 20px;
   }
 }
+
+@media screen and (max-width: 448px) {
+  .eslogan h4 {
+    font-size: 20px;
+  }
+}
+
 body {
   display: grid;
   background: #87BBA2;
@@ -153,47 +227,58 @@ article img:hover {
     background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.75)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
   }
 }
+
 @media screen and (max-width: 768px) {
   article p {
     font-size: 14px;
     padding: 10px 0px;
   }
+
   p {
     font-size: 16px;
     text-align: center;
     padding: 10px 0px;
   }
+
   section h1 {
     font-size: 30px;
   }
+
   h2 {
     font-size: 22px;
   }
+
   h3 {
     font-size: 22px;
   }
+
   .proyectos {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   nav ul {
     flex-direction: column;
     align-items: center;
   }
+
   .servicios article {
     display: block;
     text-align: center;
   }
+
   .emprendimiento {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   .eslogan h4 {
     font-size: 28px;
   }
 }
+
 /* --------- LOGOTIPO ----------- */
 nav .encabezado img {
   width: 180px;
@@ -254,11 +339,13 @@ li a {
     font-size: 28px;
   }
 }
+
 @media screen and (max-width: 448px) {
   .eslogan h4 {
     font-size: 20px;
   }
 }
+
 /* ------- BOTON DE CONSULTA -------- */
 a button {
   padding: 3px;
@@ -268,12 +355,14 @@ a button {
   border: solid var(--fondoBotones) 2px;
   border-radius: 15px;
 }
+
 a button:hover {
   background-color: var(--fondoBotones);
   color: white;
   border: solid var(--fondoBotones) 2px;
   cursor: pointer;
 }
+
 a button:hover {
   background-color: var(--fondoBotones);
   color: var(--color3);
@@ -307,24 +396,28 @@ a button:hover {
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
+
   10% {
     -webkit-transform: scale(0.91);
     transform: scale(0.91);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
+
   17% {
     -webkit-transform: scale(0.98);
     transform: scale(0.98);
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
+
   33% {
     -webkit-transform: scale(0.87);
     transform: scale(0.87);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
+
   45% {
     -webkit-transform: scale(1);
     transform: scale(1);
@@ -332,6 +425,7 @@ a button:hover {
     animation-timing-function: ease-out;
   }
 }
+
 @media screen and (max-width: 1024px) {
   .float-wa {
     font-size: 40px;
@@ -341,6 +435,7 @@ a button:hover {
     right: 50px;
   }
 }
+
 @media screen and (max-width: 768px) {
   .float-wa {
     font-size: 30px;
@@ -350,6 +445,7 @@ a button:hover {
     right: 40px;
   }
 }
+
 .proyectos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -357,11 +453,13 @@ a button:hover {
   margin: 10px 0;
   padding: 3px;
 }
+
 .proyectos article {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .proyectos article div img {
   border-radius: 3%;
   width: 100%;
@@ -382,27 +480,32 @@ ul li a:hover {
     background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.75)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
   }
 }
+
 @media screen and (max-width: 768px) {
   .proyectos {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   nav ul {
     flex-direction: column;
     align-items: center;
   }
 }
+
 @media screen and (max-width: 480px) {
   a button {
     font-size: 20px;
   }
+
   nav {
     display: flex;
     text-align: center;
     align-items: center;
   }
 }
+
 .emprendimiento {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -410,12 +513,14 @@ ul li a:hover {
   margin: 1vh 0;
   padding: 1vh;
 }
+
 .emprendimiento article p {
   font-size: 17px;
   margin: 10px 0;
   padding: 10px 0;
   align-items: flex-start;
 }
+
 .emprendimiento iframe {
   width: 100%;
   height: 250px;
@@ -444,40 +549,48 @@ ul li a:hover {
   .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.75)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
   }
+
   h3 {
     font-size: 20px;
   }
 }
+
 @media screen and (max-width: 768px) {
   .emprendimiento {
     display: grid;
     grid-template-columns: auto;
     align-items: center;
   }
+
   .emprendimiento article p {
     font-size: 14px;
     padding: 10px 0px;
   }
+
   nav ul {
     flex-direction: column;
     align-items: center;
   }
 }
+
 @media screen and (max-width: 480px) {
   a button {
     font-size: 20px;
   }
+
   nav {
     display: flex;
     text-align: center;
     align-items: center;
   }
+
   .emprendimiento {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 }
+
 .empleados img {
   border-radius: 50%;
   width: 30%;
@@ -504,40 +617,49 @@ ul li a:hover {
     background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.75)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
   }
 }
+
 @media screen and (max-width: 768px) {
   .empleados article {
     display: block;
     text-align: center;
   }
+
   #sofia {
     flex-direction: column;
     align-items: center;
   }
+
   nav ul {
     flex-direction: column;
     align-items: center;
   }
 }
+
 @media screen and (max-width: 480px) {
   a button {
     font-size: 20px;
   }
+
   nav {
     display: flex;
     text-align: center;
     align-items: center;
   }
 }
+
 .servicios article {
   display: flex;
 }
+
 .servicios article img {
   mask-image: linear-gradient(black 80%, transparent);
   width: 80%;
   height: 50vh;
   object-fit: cover;
   padding: 3px;
+  border-radius: 30px;
 }
+
 .servicios article p {
   margin: 5% 0;
   padding: 10px 0;
@@ -560,45 +682,54 @@ ul li a:hover {
     background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.75)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
   }
 }
+
 @media screen and (max-width: 920px) {
   .servicios article {
     display: block;
     text-align: center;
   }
 }
+
 @media screen and (max-width: 768px) {
   nav ul {
     flex-direction: column;
     align-items: center;
   }
+
   .eslogan h4 {
     font-size: 20px;
   }
+
   nav .encabezado img {
     width: 100px;
     height: 100px;
   }
 }
+
 @media screen and (max-width: 480px) {
   a button {
     font-size: 20px;
   }
+
   nav {
     display: flex;
     text-align: center;
     align-items: center;
   }
 }
+
 .contacto {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
+
 .contacto p {
   font-size: 25px;
   margin-top: 20px;
   align-content: center;
   padding: 5%;
 }
+
 .contacto .mapa {
   width: 200%;
   margin-bottom: 30px;
@@ -609,17 +740,20 @@ form {
   padding: 10px;
   align-items: center;
 }
+
 form label {
   display: block;
   margin: 5px 5px;
   font-size: 25px;
   text-decoration: underline;
 }
+
 form input {
   display: block;
   width: 100%;
   height: 5vh;
 }
+
 form #mensaje {
   display: flex;
   width: 90%;
@@ -633,6 +767,7 @@ input[type=submit] {
   border: solid var(--fondoBotones) 2px;
   margin: 10px 0;
 }
+
 input[type=submit]:hover {
   background-color: var(--fondoBotones);
   color: white;
@@ -649,52 +784,64 @@ input[type=submit]:hover {
     background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.75)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
   }
 }
+
 @media screen and (max-width: 768px) {
   nav ul {
     flex-direction: column;
     align-items: center;
   }
+
   input[type=submit] {
     font-size: 15px;
   }
+
   input {
     width: 90%;
   }
+
   #mensaje {
     width: 90%;
   }
+
   .contacto {
     display: block;
     text-align: center;
   }
+
   .contacto .mapa {
     width: 90%;
     height: 20em;
     margin-bottom: 10px;
   }
+
   .contacto p {
     font-size: 14px;
     padding: 12px 0;
   }
 }
+
 @media screen and (max-width: 480px) {
   a button {
     font-size: 20px;
   }
+
   nav {
     display: flex;
     text-align: center;
     align-items: center;
   }
 }
+
 .redes {
   display: flex;
   justify-content: center;
   background-color: var(--color2);
 }
+
 .redes img {
   width: 50px;
 }
+
 .redes p {
   margin: 0;
 }
